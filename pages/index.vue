@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero />
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-7xl mx-auto">
       <div class="section-container">
         <h2 class="pb-8 text-center text-h3 lg:text-h2">Acerca de mi</h2>
         <p>
@@ -34,34 +34,65 @@
           />
         </div>
       </div>
-      <div class="section-container flex flex-col lg:flex-row bg-ui-bgContrast">
-        <div class="flex flex-col w-full order-1 lg:w-1/2 lg:order-2">
-          <h2 class="pb-8 text-h3 text-center lg:text-left lg:text-h2">
-            ¿Por que elegirme como tu asesora inmobiliaria?
-          </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-            recusandae repellendus quod numquam dolore eveniet modi natus
-            facilis ullam sit impedit similique illum pariatur atque unde
-            nostrum, cumque ipsum voluptas.
-          </p>
-          <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
-            Contáctame
-          </button>
+    </div>
+    <div class="bg-ui-bgContrast">
+      <div class="section-container max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row">
+          <div class="flex flex-col w-full order-1 lg:w-1/2 lg:order-2">
+            <h2 class="pb-8 text-h3 text-center lg:text-left lg:text-h2">
+              ¿Por que elegirme como tu asesora inmobiliaria?
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+              recusandae repellendus quod numquam dolore eveniet modi natus
+              facilis ullam sit impedit similique illum pariatur atque unde
+              nostrum, cumque ipsum voluptas.
+            </p>
+            <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
+              Contáctame
+            </button>
+          </div>
+          <div
+            class="grid grid-cols-2 grid-rows-2 gap-8 order-2 lg:w-1/2 lg:px-12 lg:order-1"
+          >
+            <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
+              <span class="text-h2 text-ui-textBody">16</span> <br />
+              <p>Años de experiencia en el mercado.</p>
+            </div>
+            <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
+              <span class="text-h2 text-ui-textBody">+300</span> <br />
+              <p>Escrituras celebradas.</p>
+            </div>
+            <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
+              <span class="text-h2 text-ui-textBody">Tercio</span> <br />
+              <p>Escrituras celebradas.</p>
+            </div>
+            <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
+              <span class="text-h2 text-ui-textBody">Cuarto</span> <br />
+              <p>Escrituras celebradas.</p>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-row order-2 lg:w-1/2 lg:flex-col lg:order-1">
-          <div
-            class="w-56 p-4 my-4 border-2 border-ui-outline rounded-lg lg:my-8"
+        <div class="mt-8">
+          <vue-carousel
+            :per-page-custom="[[0, 1]]"
+            :navigationEnabled="true"
+            :loop="true"
+            :autoplaytimeout="2000"
           >
-            <span class="text-h2">16</span> <br />
-            años de experiencia en el mercado.
-          </div>
-          <div
-            class="w-56 p-4 my-4 border-2 border-ui-outline rounded-lg lg:my-8"
-          >
-            <span class="text-h2">+300</span> <br />
-            escrituras celebradas.
-          </div>
+            <vue-slide>
+              <card-testimonials />
+            </vue-slide>
+            <vue-slide>
+              <card-testimonials />
+            </vue-slide>
+            <vue-slide>
+              <card-testimonials />
+            </vue-slide>
+            <vue-slide>
+              <card-testimonials />
+            </vue-slide>
+          </vue-carousel>
         </div>
       </div>
     </div>
@@ -70,6 +101,8 @@
 
 <script>
 import { servicios } from '~/assets/data/services.json'
+import VueCarousel from 'vue-carousel/src/Carousel.vue'
+import VueSlide from 'vue-carousel/src/Slide.vue'
 
 export default {
   asyncData() {
@@ -80,5 +113,9 @@ export default {
   data: () => ({
     servicios: [],
   }),
+  components: {
+    VueCarousel,
+    VueSlide,
+  },
 }
 </script>

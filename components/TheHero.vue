@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex flex-col py-8 border-b-2 border-ui-outline lg:flex-row bg-ui-bgContrast lg:py-20"
+    class="w-full flex flex-col py-8 border-b border-ui-outline lg:flex-row bg-ui-bgContrast lg:py-20"
   >
     <div class="px-4 pb-8 flex flex-col justify-center">
       <h1 class="text-center text-h2 font-semibold lg:text-left lg:text-h1">

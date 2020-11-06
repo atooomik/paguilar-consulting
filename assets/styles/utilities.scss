@@ -1,9 +1,19 @@
 @tailwind utilities;
 
 .section-container {
-  @apply w-full px-4 py-8 border-b-2 border-ui-outline;
+  width: theme('width.full');
+  padding-top: theme('padding.8');
+  padding-right: theme('padding.4');
+  padding-bottom: theme('padding.8');
+  padding-left: theme('padding.4');
+  border-bottom: 1px solid theme('colors.ui.outline');
 
   @media (min-width: 1024px) {
-    @apply py-20;
+    padding-top: theme('padding.8');
+    padding-bottom: theme('padding.8');
   }
+}
+
+.VueCarousel-navigation-button {
+  display: none !important;
 }

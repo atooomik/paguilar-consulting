@@ -14,6 +14,7 @@
 
 <script>
 export default {
+  name: 'CardServices',
   props: {
     icon: {
       type: String,
