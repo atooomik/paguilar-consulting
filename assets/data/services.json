@@ -1,0 +1,24 @@
+{
+  "servicios": [
+    {
+      "name": "Escrituración",
+      "img": "contrato.svg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni iure tempore quis delectus commodi quod doloremque ab tenetur consequuntur pariatur excepturi amet ipsa impedit dolores laborum ipsum, quo eius! "
+    },
+    {
+      "name": "Asesoria hipotecaria",
+      "img": "contrato.svg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni iure tempore quis delectus commodi quod doloremque ab tenetur consequuntur pariatur excepturi amet ipsa impedit dolores laborum ipsum, quo eius! "
+    },
+    {
+      "name": "Alta de credito hipotecario",
+      "img": "contrato.svg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni iure tempore quis delectus commodi quod doloremque ab tenetur consequuntur pariatur excepturi amet ipsa impedit dolores laborum ipsum, quo eius! "
+    },
+    {
+      "name": "Regularización de documentos",
+      "img": "contrato.svg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni iure tempore quis delectus commodi quod doloremque ab tenetur consequuntur pariatur excepturi amet ipsa impedit dolores laborum ipsum, quo eius! "
+    }
+  ]
+}

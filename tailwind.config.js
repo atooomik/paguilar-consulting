@@ -27,6 +27,11 @@ module.exports = {
           blue: '#337AB7',
         },
       },
+      fontSize: {
+        h3: '1.25rem',
+        h2: '1.953rem',
+        h1: '3.052rem',
+      },
     },
   },
   variants: {},

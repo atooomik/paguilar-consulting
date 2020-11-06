@@ -1,0 +1,13 @@
+.btn {
+  padding-top: theme('padding.2');
+  padding-right: theme('padding.4');
+  padding-bottom: theme('padding.2');
+  padding-left: theme('padding.4');
+  border: theme('borderWidth.2') solid;
+  font-weight: theme('fontWeight.semibold');
+  border-radius: theme('borderRadius.lg');
+
+  &--blue {
+    color: theme('colors.ux.blue');
+  }
+}

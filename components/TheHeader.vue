@@ -11,8 +11,8 @@
       <p>PA Consulting</p>
     </div>
     <!--Menu mobil-->
-    <button class="btn border-ui-outline" @click="openMenu()">
-      <fa-icon class="text-lg text-ui-outline" :icon="['fas', 'bars']" />
+    <button class="btn text-ui-outline" @click="openMenu()">
+      <fa-icon class="text-h3" :icon="['fas', 'bars']" />
     </button>
   </section>
 </template>
