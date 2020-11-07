@@ -1,16 +1,4 @@
 @tailwind base;
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
-
-html {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1,
-h2 {
-  color: #283848;
-}
-
-p {
-  color: #33475b;
-}
+@import './layout.scss';
+@import './animations';

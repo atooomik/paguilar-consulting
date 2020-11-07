@@ -26,10 +26,8 @@
         <slot></slot>
       </div>
       <div v-else class="flex mt-4">
-        <figure
-          class="px-4 py-2 mr-auto ml-0 border border-ui-outline rounded-lg"
-        >
-          5 minutos
+        <figure class="px-4 py-2 mr-auto ml-0">
+          <p class="text-ui-textContrast">5 minutos</p>
         </figure>
         <button class="btn btn--blue mr-0 ml-auto">Léer más</button>
       </div>

@@ -1,19 +1,5 @@
 @tailwind utilities;
 
-.section-container {
-  width: theme('width.full');
-  padding-top: theme('padding.8');
-  padding-right: theme('padding.4');
-  padding-bottom: theme('padding.8');
-  padding-left: theme('padding.4');
-  border-bottom: 1px solid theme('colors.ui.outline');
-
-  @media (min-width: 1024px) {
-    padding-top: theme('padding.8');
-    padding-bottom: theme('padding.8');
-  }
-}
-
 .VueCarousel-navigation-button {
   display: none !important;
 }
