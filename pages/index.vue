@@ -1,6 +1,7 @@
 <template>
   <div>
     <the-hero />
+    <!--Section about me-->
     <div class="max-w-7xl mx-auto">
       <div class="section-container">
         <h2 class="pb-8 text-center text-h3 lg:text-h2">Acerca de mi</h2>
@@ -21,7 +22,8 @@
           />
         </figure>
       </div>
-      <div class="section-container">
+      <!--Section services-->
+      <div id="servicios" class="section-container">
         <h2 class="pb-4 text-center text-h3 lg:text-h2">Servicios</h2>
         <p class="pb-8 text-center">¿Qué puedo hacer por ti?</p>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -35,7 +37,8 @@
         </div>
       </div>
     </div>
-    <div class="bg-ui-bgContrast">
+    <!--Sección why me?-->
+    <div id="trayectoria" class="bg-ui-bgContrast">
       <div class="section-container max-w-7xl mx-auto">
         <div class="flex flex-col lg:flex-row">
           <div class="flex flex-col w-full order-1 lg:w-1/2 lg:order-2">
@@ -96,6 +99,7 @@
         </div>
       </div>
     </div>
+    <!--Last entries-->
     <div class="section-container max-w-7xl mx-auto">
       <h2 class="pb-8 text-h3 text-center lg:text-h2">Ultimas entradas</h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -104,7 +108,8 @@
         <card-blog-resume :largeCard="false" />
       </div>
     </div>
-    <div class="section-container max-w-7xl mx-auto">
+    <!--Contact form-->
+    <div id="contacto" class="section-container max-w-7xl mx-auto">
       <h2 class="pb-8 text-h3 text-center lg:text-h2">
         Permiteme aportar mi experiencia a tú proyecto
       </h2>

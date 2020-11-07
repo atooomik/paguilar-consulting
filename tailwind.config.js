@@ -20,6 +20,7 @@ module.exports = {
           white: '#fff',
           outline: '#e2e2e2',
           bgContrast: '#F9F8FD',
+          textContrast: '#6e6d7a',
           textTitles: '#283848',
           textBody: '#33475B',
         },
