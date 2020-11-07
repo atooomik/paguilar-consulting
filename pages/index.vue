@@ -97,11 +97,19 @@
       </div>
     </div>
     <div class="section-container max-w-7xl mx-auto">
-      <h2 class="pb-8 text-h3 lg:text-h2 text-center">Ultimas entradas</h2>
+      <h2 class="pb-8 text-h3 text-center lg:text-h2">Ultimas entradas</h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <card-blog-resume :largeCard="false" />
         <card-blog-resume :largeCard="false" />
         <card-blog-resume :largeCard="false" />
+      </div>
+    </div>
+    <div class="section-container max-w-7xl mx-auto">
+      <h2 class="pb-8 text-h3 text-center lg:text-h2">
+        Permiteme aportar mi experiencia a tú proyecto
+      </h2>
+      <div>
+        <form-contact />
       </div>
     </div>
   </div>
