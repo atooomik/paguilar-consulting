@@ -81,7 +81,8 @@
             :per-page-custom="[[0, 1]]"
             :navigationEnabled="true"
             :loop="true"
-            :autoplaytimeout="2000"
+            :autoplay="true"
+            :autoplayTimeout="3000"
           >
             <vue-slide>
               <card-testimonials />

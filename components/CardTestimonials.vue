@@ -2,10 +2,10 @@
   <div class="relative w-full">
     <div class="w-48 h-56 mx-auto border border-ui-outline">
       <div
-        class="absolute right-0 bottom-0 left-0 w-5/6 mx-auto text-center lg:w-2/6"
+        class="absolute right-0 bottom-0 left-0 w-5/6 mx-auto text-center md:w-1/2 lg:w-2/6"
       >
         <img
-          class="w-6 h-6 lg:w-12 lg:h-12 mx-auto"
+          class="w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12 mx-auto"
           src="~/assets/images/cita.svg"
           alt="Icono del autor del comentario"
         />
