@@ -5,7 +5,7 @@
         class="absolute right-0 bottom-0 left-0 w-5/6 mx-auto text-center lg:w-2/6"
       >
         <img
-          class="w-12 h-12 mx-auto"
+          class="w-6 h-6 lg:w-12 lg:h-12 mx-auto"
           src="~/assets/images/cita.svg"
           alt="Icono del autor del comentario"
         />
