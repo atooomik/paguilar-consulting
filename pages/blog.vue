@@ -95,5 +95,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      titleChunk: 'Blog',
+    }
+  },
+  transition: 'slide-transition',
+}
 </script>

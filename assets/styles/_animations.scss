@@ -7,3 +7,13 @@
   transform: translateY(8px);
   opacity: 0;
 }
+
+.slide-transition-enter-active,
+.slide-transition-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+.slide-transition-enter,
+.slide-transition-leave-to {
+  transform: translateX(50px);
+  opacity: 0;
+}

@@ -141,5 +141,6 @@ export default {
     VueCarousel,
     VueSlide,
   },
+  transition: 'slide-transition',
 }
 </script>
