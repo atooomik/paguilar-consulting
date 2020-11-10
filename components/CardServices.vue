@@ -1,5 +1,5 @@
 <template>
-  <div class="my-4 p-4 shadow-lg bg-ui-bgContrast">
+  <div class="my-4 p-4">
     <div class="w-full">
       <img
         class="w-12 h-12 mx-auto"
