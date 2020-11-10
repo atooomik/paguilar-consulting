@@ -1,13 +1,17 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'h-consulting',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    titleTemplate: (titleChunk) => {
+      return titleChunk
+        ? `Patricia Aguilar | ${titleChunk}`
+        : 'Patricia Aguilar | Consultoria Inmobiliaria'
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
