@@ -49,7 +49,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/">
+              <nuxt-link to="/blog">
                 <p
                   class="mx-4 text-h4 text-ui-textContrast font-semibold hover:text-ui-textBody"
                 >
@@ -87,7 +87,7 @@
                 </nuxt-link>
               </li>
               <li class="border-t border-ui-outline">
-                <nuxt-link to="#servicios">
+                <nuxt-link to="/blog">
                   <p class="my-2 text-h4 font-semibold hover:text-ux-blue">
                     Blog
                   </p>

@@ -1,5 +1,8 @@
 <template>
-  <div class="p-4 mt-8 border border-ui-outline rounded-lg">
+  <div
+    class="p-4 border border-ui-outline rounded-lg"
+    :class="largeCard ? 'mt-0' : 'mt-8'"
+  >
     <div
       class="relative w-full h-64 mb-4 rounded-lg overflow-hidden shadow-lg"
       :class="largeCard ? 'mt-0' : '-mt-12'"
@@ -25,13 +28,15 @@
       <div v-if="largeCard">
         <slot></slot>
       </div>
-      <div v-else class="flex mt-4">
-        <figure
-          class="flex items-center my-2 mr-auto ml-0 text-ui-textContrast"
-        >
-          <fa-icon class="mr-2 hidden md:block" :icon="['fas', 'eye']" />
+      <div v-else class="flex items-center mt-4">
+        <div class="flex items-center">
+          <figure
+            class="flex items-center justify-center w-8 h-8 mr-2 bg-gray-200 rounded-lg"
+          >
+            <fa-icon class="text-ui-textContrast" :icon="['fas', 'eye']" />
+          </figure>
           <p class="text-ui-textContrast font-semibold">25 lecturas</p>
-        </figure>
+        </div>
         <button class="btn btn--blue mr-0 ml-auto">Léer más</button>
       </div>
     </div>
@@ -47,6 +52,5 @@ export default {
       default: false,
     },
   },
-  methods: {},
 }
 </script>
