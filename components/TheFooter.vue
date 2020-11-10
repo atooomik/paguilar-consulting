@@ -1,7 +1,7 @@
 <template>
   <footer class="w-full bg-ui-bgContrast">
-    <div class="max-w-7xl mx-auto text-center">
-      <div class="flex justify-center py-4">
+    <div class="max-w-7xl py-4 mx-auto text-center">
+      <div class="flex justify-center mb-4">
         <a href="mailto:patricia.aguilarm@outlook.es">
           <fa-icon
             class="text-3xl mx-4 text-ui-textContrast hover:text-ui-textTitles"
@@ -21,7 +21,13 @@
       <p class="font-semibold">Patricia Aguilar Consultoria</p>
       <p>Copyright 2020</p>
       <p>
-        Diseño y desarrollo por <a class="font-semibold" href="/">atoomik</a>
+        Diseño y desarrollo por:
+        <a
+          class="font-semibold text-ux-blue"
+          target="_blank"
+          href="https://atoomikdev.com/"
+          >atoomik</a
+        >
       </p>
     </div>
   </footer>

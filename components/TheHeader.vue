@@ -5,7 +5,7 @@
         class="w-full h-20 flex items-center justify-between border-b border-ui-outline lg:order-2"
       >
         <button
-          class="p-2 text-ui-textContrast rounded-lg lg:hidden"
+          class="p-2 text-ui-textContrast rounded-lg hover:text-ui-textTitles lg:hidden"
           @click="openMenu()"
         >
           <fa-icon class="text-h4" :icon="['fas', 'bars']" />
@@ -86,7 +86,7 @@
                   </p>
                 </nuxt-link>
               </li>
-              <li>
+              <li class="border-t border-ui-outline">
                 <nuxt-link to="#servicios">
                   <p class="my-2 text-h4 font-semibold hover:text-ux-blue">
                     Blog
