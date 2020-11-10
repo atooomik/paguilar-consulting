@@ -26,8 +26,11 @@
         <slot></slot>
       </div>
       <div v-else class="flex mt-4">
-        <figure class="px-4 py-2 mr-auto ml-0">
-          <p class="text-ui-textContrast">5 minutos</p>
+        <figure
+          class="flex items-center my-2 mr-auto ml-0 text-ui-textContrast"
+        >
+          <fa-icon class="mr-2 hidden md:block" :icon="['fas', 'eye']" />
+          <p class="text-ui-textContrast font-semibold">25 lecturas</p>
         </figure>
         <button class="btn btn--blue mr-0 ml-auto">Léer más</button>
       </div>
@@ -44,5 +47,6 @@ export default {
       default: false,
     },
   },
+  methods: {},
 }
 </script>
