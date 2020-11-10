@@ -9,9 +9,11 @@
           Nostrodum exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequeant.
         </p>
-        <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
-          Servicios
-        </button>
+        <a href="#servicios">
+          <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
+            Servicios
+          </button>
+        </a>
       </div>
       <div class="w-full h-72 px-4 overflow-hidden">
         <img

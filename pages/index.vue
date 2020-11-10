@@ -51,9 +51,11 @@
               facilis ullam sit impedit similique illum pariatur atque unde
               nostrum, cumque ipsum voluptas.
             </p>
-            <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
-              Contáctame
-            </button>
+            <a href="#contacto">
+              <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
+                Contáctame
+              </button>
+            </a>
           </div>
           <div
             class="grid grid-cols-2 grid-rows-2 gap-8 order-2 lg:w-1/2 lg:px-12 lg:order-1"
