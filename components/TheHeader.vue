@@ -12,9 +12,8 @@
         </button>
 
         <nuxt-link class="flex items-center" to="/">
-          <p class="text-ui-textContrast font-semibold">PA Consulting</p>
           <img
-            src="~/assets/images/corredor.svg"
+            src="~/assets/images/logo-dummy.svg"
             class="w-10 h-10 ml-4"
             alt="Logo de la marca"
           />
