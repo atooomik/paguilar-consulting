@@ -14,7 +14,7 @@
         <nuxt-link class="flex items-center" to="/">
           <img
             src="~/assets/images/logo-dummy.svg"
-            class="w-10 h-10 ml-4"
+            class="w-10 h-10"
             alt="Logo de la marca"
           />
         </nuxt-link>
@@ -23,7 +23,7 @@
             <li>
               <nuxt-link to="#servicios">
                 <p
-                  class="mx-4 text-h4 text-ui-textContrast font-semibold hover:text-ui-textBody"
+                  class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
                 >
                   Servicios
                 </p>
@@ -32,7 +32,7 @@
             <li>
               <nuxt-link to="#trayectoria">
                 <p
-                  class="mx-4 text-h4 text-ui-textContrast font-semibold hover:text-ui-textBody"
+                  class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
                 >
                   Trayectoria
                 </p>
@@ -41,19 +41,18 @@
             <li>
               <nuxt-link to="#contacto">
                 <p
-                  class="mx-4 text-h4 text-ui-textContrast font-semibold hover:text-ui-textBody"
+                  class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
                 >
                   Contacto
                 </p>
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/blog">
-                <p
-                  class="mx-4 text-h4 text-ui-textContrast font-semibold hover:text-ui-textBody"
-                >
-                  Blog
-                </p>
+              <nuxt-link
+                to="/blog"
+                class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
+              >
+                Blog
               </nuxt-link>
             </li>
           </ul>
@@ -61,35 +60,27 @@
       </div>
       <!--Menu mobil-->
       <transition name="slide-fade">
-        <div v-if="showMenu" class="bg-ui-white">
+        <div v-if="showMenu" class="py-2 bg-ui-white">
           <nav>
             <ul>
               <li>
                 <nuxt-link to="#servicios">
-                  <p class="my-2 text-h4 font-semibold hover:text-ux-blue">
-                    Servicios
-                  </p>
+                  <p class="my-2 text-h4 hover:text-ux-blue">Servicios</p>
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="#trayectoria">
-                  <p class="my-2 text-h4 font-semibold hover:text-ux-blue">
-                    Trayectoria
-                  </p>
+                  <p class="my-2 text-h4 hover:text-ux-blue">Trayectoria</p>
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="#contacto">
-                  <p class="my-2 text-h4 font-semibold hover:text-ux-blue">
-                    Contacto
-                  </p>
+                  <p class="my-2 text-h4 hover:text-ux-blue">Contacto</p>
                 </nuxt-link>
               </li>
               <li class="border-t border-ui-outline">
-                <nuxt-link to="/blog">
-                  <p class="my-2 text-h4 font-semibold hover:text-ux-blue">
-                    Blog
-                  </p>
+                <nuxt-link to="/blog" class="my-2 text-h4 hover:text-ux-blue">
+                  Blog
                 </nuxt-link>
               </li>
             </ul>

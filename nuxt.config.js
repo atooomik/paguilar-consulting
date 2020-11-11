@@ -53,4 +53,8 @@ export default {
   build: {
     transpile: ['vue-carousel'],
   },
+  router: {
+    linkActiveClass: 'is-active',
+    linkExactActiveClass: 'is-active--exact',
+  },
 }
