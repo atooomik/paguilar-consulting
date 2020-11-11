@@ -4,7 +4,7 @@
     :class="largeCard ? 'mt-0' : 'mt-8'"
   >
     <div
-      class="relative w-full h-64 mb-4 rounded-lg overflow-hidden shadow-lg"
+      class="relative w-full h-64 mb-4 rounded-lg overflow-hidden"
       :class="largeCard ? 'mt-0' : '-mt-12'"
     >
       <img
@@ -12,6 +12,13 @@
         src="../static/images/hipoteca.jpg"
         alt="Portada de la card de blog"
       />
+      <figure
+        v-if="largeCard"
+        class="absolute top-0 right-0 flex items-center p-2 mr-4 bg-ui-white rounded-b-lg shadow-lg"
+      >
+        <fa-icon class="mr-2 text-ux-orange" :icon="['fas', 'home']" />
+        <p class="text-ux-orange font-semibold">Vivienda</p>
+      </figure>
     </div>
     <div>
       <p class="mb-4 text-h4 lg:text-h3">

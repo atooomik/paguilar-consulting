@@ -26,6 +26,7 @@ module.exports = {
         },
         ux: {
           blue: '#337AB7',
+          orange: '#FC7B27',
         },
       },
       fontSize: {

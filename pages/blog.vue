@@ -11,8 +11,8 @@
           compartir contigo estas experiencias y como logramos resolverlas.
         </p>
         <p class="mb-4 text-h4">
-          Aquí puedes encontrar mi
-          <span class="font-semibold">última entrada:</span>
+          Aquí puedes encontrar
+          <a href="/" class="font-semibold text-ux-blue">mi última entrada:</a>
         </p>
         <!----
         <p class="mb-4">
@@ -51,17 +51,6 @@
                 >
                   <fa-icon
                     class="text-ui-textContrast"
-                    :icon="['fas', 'home']"
-                  />
-                </figure>
-                <p class="text-ui-textContrast font-semibold">Vivienda</p>
-              </div>
-              <div class="flex items-center mr-4 mb-4 lg:mb-0">
-                <figure
-                  class="flex items-center justify-center w-8 h-8 mr-2 bg-gray-200 rounded-lg"
-                >
-                  <fa-icon
-                    class="text-ui-textContrast"
                     :icon="['fas', 'clock']"
                   />
                 </figure>
@@ -85,7 +74,8 @@
     </div>
     <div class="section-container max-w-7xl mx-auto">
       <h2 class="pb-8 text-h3 text-center lg:text-h2">Todas las entradas</h2>
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <card-blog-resume :largeCard="false" />
         <card-blog-resume :largeCard="false" />
         <card-blog-resume :largeCard="false" />
         <card-blog-resume :largeCard="false" />
