@@ -51,7 +51,7 @@
               facilis ullam sit impedit similique illum pariatur atque unde
               nostrum, cumque ipsum voluptas.
             </p>
-            <a href="#contacto">
+            <a href="#contacto" class="flex">
               <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
                 Contáctame
               </button>
