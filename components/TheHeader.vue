@@ -21,30 +21,27 @@
         <nav class="hidden lg:block">
           <ul class="flex">
             <li>
-              <nuxt-link to="#servicios">
-                <p
-                  class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
-                >
-                  Servicios
-                </p>
+              <nuxt-link
+                to="/#servicios"
+                class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
+              >
+                Servicios
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="#trayectoria">
-                <p
-                  class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
-                >
-                  Trayectoria
-                </p>
+              <nuxt-link
+                to="/#trayectoria"
+                class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
+              >
+                Trayectoria
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="#contacto">
-                <p
-                  class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
-                >
-                  Contacto
-                </p>
+              <nuxt-link
+                to="/#contacto"
+                class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
+              >
+                Contacto
               </nuxt-link>
             </li>
             <li>
