@@ -3,7 +3,7 @@ import Vue from 'vue'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import {
   faBars,
   faEye,
@@ -24,7 +24,8 @@ library.add(
   faHome,
   faClock,
   faCalendar,
-  faChevronRight
+  faChevronRight,
+  faLinkedinIn
 )
 
 Vue.component('fa-icon', FontAwesomeIcon)
