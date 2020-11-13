@@ -26,7 +26,9 @@
       <div id="servicios" class="section-container">
         <h2 class="pb-4 text-center text-h3 lg:text-h2">Servicios</h2>
         <p class="pb-8 text-center">¿Qué puedo hacer por ti?</p>
-        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
           <card-services
             v-for="(service, i) in servicios"
             :key="i"

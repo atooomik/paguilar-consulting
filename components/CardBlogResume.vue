@@ -44,7 +44,9 @@
           </figure>
           <p class="text-ui-textContrast font-semibold">25 lecturas</p>
         </div>
-        <button class="btn btn--blue mr-0 ml-auto">Léer más</button>
+        <nuxt-link :to="`${path}`" class="mr-0 ml-auto">
+          <button class="btn btn--blue">Léer más</button>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -57,6 +59,10 @@ export default {
     largeCard: {
       type: Boolean,
       default: false,
+    },
+    path: {
+      type: String,
+      default: '/blog',
     },
   },
 }
