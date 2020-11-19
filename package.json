@@ -18,9 +18,18 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/axios": "^5.12.2",
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
+    "defu": "^3.2.2",
+    "node-fetch": "^2.6.1",
     "nuxt": "^2.14.6",
-    "vue-carousel": "^0.18.0"
+    "property-information": "^5.6.0",
+    "vue": "^2.6.12",
+    "vue-carousel": "^0.18.0",
+    "vue-client-only": "^2.0.0",
+    "vue-meta": "^2.4.0",
+    "vue-no-ssr": "^1.1.1",
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
     "@nuxtjs/stylelint-module": "^4.0.0",
@@ -31,7 +40,7 @@
     "fibers": "^5.0.0",
     "prettier": "^2.1.2",
     "sass": "^1.29.0",
-    "sass-loader": "^10.0.5",
+    "sass-loader": "^10.1.0",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
