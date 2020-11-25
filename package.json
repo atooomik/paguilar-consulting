@@ -32,6 +32,7 @@
     "vue-router": "^3.4.9"
   },
   "devDependencies": {
+    "@nuxtjs/google-fonts": "^1.2.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^3.2.0",
     "@tailwindcss/custom-forms": "^0.2.1",

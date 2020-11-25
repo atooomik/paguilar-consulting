@@ -6,13 +6,13 @@
       <div class="section-container">
         <h2 class="pb-8 text-center text-h3 lg:text-h2">Acerca de mi</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut
-          perspiciatis ipsam impedit distinctio, maiores illo magnam libero,
-          ducimus, provident ea quas hic animi voluptatem quo velit at fugiat
-          recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Facere excepturi rem ratione quibusdam! Labore unde voluptas magnam,
-          expedita cumque quibusdam odio possimus ipsam neque tenetur nostrum
-          fugit nihil. Dolorum, dolores.
+          Soy una mujer que siempre le han gustado los retos, desde que tengo 5
+          años siempre he buscado el como SI … es lo que me ha identificado a lo
+          largo de mi vida, , valoro mucho el tiempo y los recursos que cada uno
+          invierte en conseguir un objetivo, desde muy joven tuve la inquietud
+          de tener mi propio espacio… ese lugar que he decorado a mi gusto,
+          donde comparto con los que amo, donde sueño, cocino y construyo día a
+          día mis realidades … eso es para mi una casa, un hogar.
         </p>
         <figure class="w-32 h-32 mx-auto mt-8 overflow-hidden rounded-full">
           <img

@@ -33,6 +33,12 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-fonts', { 
+      families: {
+         'Source+Sans+Pro': [200, 400, 600]
+      },
+      download: true
+      }]
   ],
   watch: ['~/tailwind.config.js'],
   // Modules (https://go.nuxtjs.dev/config-modules)
