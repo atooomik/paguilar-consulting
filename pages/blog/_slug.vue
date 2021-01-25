@@ -15,7 +15,7 @@
         </nuxt-link>
         <img
           class="rounded-lg"
-          src="~/assets/images/smiling-businesswoman.jpg"
+          src="~/assets/images/smiling.jpg"
           alt="Portada de la entrada del blog"
         />
       </div>
@@ -111,7 +111,7 @@
         <div class="w-20 h-20 rounded-full overflow-hidden">
           <img
             class="w-full h-full object-cover"
-            src="~/assets/images/selfie.png"
+            src="~/assets/images/selfie.jpg"
             alt=""
           />
         </div>

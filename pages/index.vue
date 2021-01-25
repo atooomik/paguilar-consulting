@@ -4,23 +4,52 @@
     <!--Section about me-->
     <div class="max-w-7xl mx-auto">
       <div class="section-container">
-        <h2 class="pb-8 text-center text-h3 lg:text-h2">Acerca de mi</h2>
-        <p>
-          Soy una mujer que siempre le han gustado los retos, desde que tengo 5
-          años siempre he buscado el como SI … es lo que me ha identificado a lo
-          largo de mi vida, , valoro mucho el tiempo y los recursos que cada uno
-          invierte en conseguir un objetivo, desde muy joven tuve la inquietud
-          de tener mi propio espacio… ese lugar que he decorado a mi gusto,
-          donde comparto con los que amo, donde sueño, cocino y construyo día a
-          día mis realidades … eso es para mi una casa, un hogar.
-        </p>
-        <figure class="w-32 h-32 mx-auto mt-8 overflow-hidden rounded-full">
-          <img
-            class="w-full h-full object-cover"
-            src="~/assets/images/selfie.png"
-            alt="Foto frontal"
-          />
-        </figure>
+        <h2 class="pb-8 text-center text-h3 lg:text-h2 lg:pb-0">
+          Acerca de mi
+        </h2>
+        <div class="flex flex-col md:flex-row md:items-center">
+          <div class="order-1 w-full md:order-2 md:w-1/2">
+            <p class="mb-2">
+              Soy una mujer a quien siempre le han gustado los retos, desde que
+              tengo 5 años siempre he buscado el como si, y eso es lo que me ha
+              identificado a lo largo de la vida.
+            </p>
+            <p>
+              Desde muy joven tuve la inquietud de tener mi propio espacio, ese
+              lugar que he decorado a mi gusto, donde comparto con los que amo,
+              donde sueño, cocino y construyo día a día mis realidades, eso es
+              para mi una casa, un hogar.
+            </p>
+          </div>
+          <figure
+            class="order-2 md:order-1 w-2/3 h-full mx-auto mt-8 overflow-hidden rounded-lg md:w-1/2 md:mt-0"
+          >
+            <li class="py-10 px-6 text-center rounded-lg xl:px-10 xl:text-left">
+              <div class="space-y-6 xl:space-y-10">
+                <img
+                  class="mx-auto h-40 w-40 rounded-full object-cover object-top xl:w-64 xl:h-64"
+                  src="~/assets/images/selfie.jpg"
+                  alt="Foto de perfil"
+                />
+                <div class="space-y-2">
+                  <div
+                    class="font-medium text-lg leading-6 space-y-1 text-center"
+                  >
+                    <h3 class="">Patricia Aguilar</h3>
+                    <p class="font-semibold">Asesora inmobiliaria</p>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                      <span class="sr-only">LinkedIn</span>
+                      <fa-icon
+                        class="text-ui-textContrast hover:text-ux-blue"
+                        :icon="['fab', 'linkedin']"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </figure>
+        </div>
       </div>
       <!--Section services-->
       <div id="servicios" class="section-container">

@@ -18,7 +18,7 @@
       <div class="w-full h-72 px-4 overflow-hidden">
         <img
           class="w-full h-full object-cover rounded-lg"
-          src="~/assets/images/smiling-businesswoman.jpg"
+          src="~/assets/images/smiling.jpg"
           alt="Mujer asesorando a una pareja"
         />
       </div>
