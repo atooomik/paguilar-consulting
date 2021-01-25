@@ -120,11 +120,11 @@
           <div class="flex items-center mt-4">
             <a href="/linkedin">
               <button
-                class="flex items-center justify-center w-8 h-8 mr-2 bg-gray-200 rounded-lg"
+                class="flex items-center justify-center w-8 h-8 mr-2 rounded-lg"
               >
                 <fa-icon
-                  class="text-ui-textContrast hover:text-ux-blue"
-                  :icon="['fab', 'linkedin-in']"
+                  class="text-ui-textContrast text-xl hover:text-ux-blue"
+                  :icon="['fab', 'linkedin']"
                 />
               </button>
             </a>

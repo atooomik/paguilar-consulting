@@ -40,7 +40,7 @@
                     <a href="#" class="text-gray-400 hover:text-gray-300">
                       <span class="sr-only">LinkedIn</span>
                       <fa-icon
-                        class="text-ui-textContrast hover:text-ux-blue"
+                        class="text-ui-textContrast text-xl hover:text-ux-blue"
                         :icon="['fab', 'linkedin']"
                       />
                     </a>
