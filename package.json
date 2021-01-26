@@ -27,7 +27,8 @@
     "vue-carousel": "^0.18.0",
     "vue-client-only": "^2.0.0",
     "vue-meta": "^2.4.0",
-    "vue-router": "^3.4.9"
+    "vue-router": "^3.4.9",
+    "vue2-smooth-scroll": "^1.5.0"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^1.2.0",

@@ -22,7 +22,10 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~/plugins/font-awesome.js'],
+  plugins: [
+    { src: '~/plugins/font-awesome.js', ssr: false },
+    { src: '~/plugins/vue-scroll.js', ssr: false}
+    ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

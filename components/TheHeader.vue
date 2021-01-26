@@ -11,46 +11,49 @@
           <fa-icon class="text-h4" :icon="['fas', 'bars']" />
         </button>
 
-        <nuxt-link class="flex items-center" to="/">
+        <a class="flex items-center" href="/">
           <img
             src="~/assets/images/logo-dummy.svg"
             class="w-10 h-10"
             alt="Logo de la marca"
           />
-        </nuxt-link>
+        </a>
         <nav class="hidden lg:block">
           <ul class="flex">
             <li>
-              <nuxt-link
-                to="/#servicios"
+              <a
+                href="#servicios"
+                v-smooth-scroll
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Servicios
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
-                to="/#trayectoria"
+              <a
+                href="#trayectoria"
+                v-smooth-scroll
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Trayectoria
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
-                to="/#contacto"
+              <a
+                href="#contacto"
+                v-smooth-scroll
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Contacto
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
-                to="/blog"
+              <a
+                href="/blog"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Blog
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </nav>
@@ -60,25 +63,25 @@
         <div v-if="showMenu" class="py-2 bg-ui-white">
           <nav>
             <ul>
-              <li>
-                <nuxt-link to="#servicios">
+              <li @click="redirect">
+                <a href="#servicios" v-smooth-scroll>
                   <p class="my-2 text-h4 hover:text-ux-blue">Servicios</p>
-                </nuxt-link>
+                </a>
               </li>
-              <li>
-                <nuxt-link to="#trayectoria">
+              <li @click="redirect">
+                <a href="#trayectoria" v-smooth-scroll>
                   <p class="my-2 text-h4 hover:text-ux-blue">Trayectoria</p>
-                </nuxt-link>
+                </a>
               </li>
-              <li>
-                <nuxt-link to="#contacto">
+              <li @click="redirect">
+                <a href="#contacto" v-smooth-scroll>
                   <p class="my-2 text-h4 hover:text-ux-blue">Contacto</p>
-                </nuxt-link>
+                </a>
               </li>
-              <li class="border-t border-ui-outline">
-                <nuxt-link to="/blog" class="my-2 text-h4 hover:text-ux-blue">
+              <li @click="redirect" class="border-t border-ui-outline">
+                <a href="/blog" class="my-2 text-h4 hover:text-ux-blue">
                   Blog
-                </nuxt-link>
+                </a>
               </li>
             </ul>
           </nav>
@@ -101,6 +104,11 @@ export default {
   methods: {
     openMenu() {
       this.showMenu = !this.showMenu
+    },
+    redirect() {
+      setTimeout(() => {
+        this.showMenu = false
+      }, 25)
     },
   },
 }
