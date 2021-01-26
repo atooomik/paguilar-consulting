@@ -31,7 +31,12 @@
         -->
       </div>
       <div class="lg:w-1/2">
-        <card-blog-resume :largeCard="true">
+        <card-blog-resume
+          :title="lastEntry.name"
+          :resume="lastEntry.desc"
+          :date="lastEntry.date"
+          :largeCard="true"
+        >
           <div>
             <div class="flex flex-wrap my-4">
               <div class="flex items-center mr-4 mb-4 lg:mb-0">
@@ -43,7 +48,9 @@
                     :icon="['fas', 'calendar']"
                   />
                 </figure>
-                <p class="text-ui-textContrast font-semibold">28/11/20</p>
+                <p class="text-ui-textContrast font-semibold">
+                  {{ lastEntry.date }}
+                </p>
               </div>
               <div class="flex items-center mr-4 mb-4 lg:mb-0">
                 <figure
@@ -77,21 +84,39 @@
     <div class="section-container max-w-7xl mx-auto">
       <h2 class="pb-8 text-h3 text-center lg:text-h2">Todas las entradas</h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <card-blog-resume path="/blog/prueba-a" />
-        <card-blog-resume path="/blog/prueba-b" />
-        <card-blog-resume path="/blog/prueba-c" />
-        <card-blog-resume path="/blog/prueba-d" />
+        <card-blog-resume
+          v-for="(entrada, i) in entradas"
+          :key="i"
+          :title="entrada.name"
+          :resume="entrada.desc"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { entradas } from '~/assets/data/entries.json'
 export default {
+  asyncData() {
+    return {
+      entradas,
+    }
+  },
   head() {
     return {
       titleChunk: 'Blog',
     }
+  },
+  data() {
+    return {
+      entradas: [],
+    }
+  },
+  computed: {
+    lastEntry() {
+      return this.entradas[0]
+    },
   },
   transition: 'slide-transition',
 }

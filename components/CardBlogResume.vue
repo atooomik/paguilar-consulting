@@ -22,13 +22,10 @@
     </div>
     <div>
       <p class="mb-4 text-h4 lg:text-h3">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        {{title}}      
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maxime
-        cum! Assumenda molestias harum unde veniam voluptates quo voluptate vel
-        labore laboriosam asperiores sapiente velit, quis expedita architecto
-        iste qui?
+        {{resume}}
       </p>
     </div>
     <div>
@@ -56,6 +53,14 @@
 export default {
   name: 'CardBlogResume',
   props: {
+    title: {
+      type: String,
+      default: ''
+    },
+    resume: {
+      type: String,
+      default: ''
+    },
     largeCard: {
       type: Boolean,
       default: false,

@@ -137,9 +137,12 @@
     <div class="section-container max-w-7xl mx-auto">
       <h2 class="pb-8 text-h3 text-center lg:text-h2">Ultimas entradas</h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <card-blog-resume :largeCard="false" />
-        <card-blog-resume :largeCard="false" />
-        <card-blog-resume :largeCard="false" />
+        <card-blog-resume
+          v-for="(entrada, i) in entradas"
+          :key="i"
+          :title="entrada.name"
+          :resume="entrada.desc"
+        />
       </div>
     </div>
     <!--Contact form-->
@@ -156,6 +159,7 @@
 
 <script>
 import { servicios } from '~/assets/data/services.json'
+import { entradas } from '~/assets/data/entries.json'
 import VueCarousel from 'vue-carousel/src/Carousel.vue'
 import VueSlide from 'vue-carousel/src/Slide.vue'
 
@@ -163,10 +167,12 @@ export default {
   asyncData() {
     return {
       servicios,
+      entradas,
     }
   },
   data: () => ({
     servicios: [],
+    entradas: [],
   }),
   components: {
     VueCarousel,
