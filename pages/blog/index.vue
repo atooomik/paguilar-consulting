@@ -32,8 +32,8 @@
       </div>
       <div class="lg:w-1/2">
         <card-blog-resume
-          :title="lastEntry.name"
-          :resume="lastEntry.desc"
+          :title="lastEntry.title"
+          :resume="lastEntry.description"
           :date="lastEntry.date"
           :largeCard="true"
         >
@@ -85,10 +85,11 @@
       <h2 class="pb-8 text-h3 text-center lg:text-h2">Todas las entradas</h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <card-blog-resume
-          v-for="(entrada, i) in entradas"
+          v-for="(item, i) in article"
           :key="i"
-          :title="entrada.name"
-          :resume="entrada.desc"
+          :title="item.title"
+          :resume="item.description"
+          :path="`/blog/${item.slug}`"
         />
       </div>
     </div>
@@ -96,26 +97,21 @@
 </template>
 
 <script>
-import { entradas } from '~/assets/data/entries.json'
+
 export default {
-  asyncData() {
-    return {
-      entradas,
-    }
+  async asyncData({ $content }) {
+    const article = await $content('articles').fetch()
+    return { article}
   },
   head() {
     return {
       titleChunk: 'Blog',
     }
   },
-  data() {
-    return {
-      entradas: [],
-    }
-  },
+  
   computed: {
     lastEntry() {
-      return this.entradas[0]
+      return this.article[0]
     },
   },
   transition: 'slide-transition',
