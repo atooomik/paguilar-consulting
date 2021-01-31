@@ -16,16 +16,16 @@
         v-if="largeCard"
         class="absolute top-0 right-0 flex items-center p-2 mr-4 bg-ui-white rounded-b-lg shadow-lg"
       >
-        <fa-icon class="mr-2 text-ux-orange" :icon="['fas', 'home']" />
-        <p class="text-ux-orange font-semibold">Vivienda</p>
+        <fa-icon class="mr-2 text-ux-orange" :icon="categoryIcon" />
+        <p class="text-ux-orange font-semibold">{{ category }}</p>
       </figure>
     </div>
     <div>
       <p class="mb-4 text-h4 lg:text-h3">
-        {{title}}      
+        {{ title }}
       </p>
       <p>
-        {{resume}}
+        {{ resume }}
       </p>
     </div>
     <div>
@@ -53,13 +53,17 @@
 export default {
   name: 'CardBlogResume',
   props: {
+    category: {
+      type: String,
+      default: '',
+    },
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     resume: {
       type: String,
-      default: ''
+      default: '',
     },
     largeCard: {
       type: Boolean,
@@ -68,6 +72,18 @@ export default {
     path: {
       type: String,
       default: '/blog',
+    },
+  },
+  computed: {
+    categoryIcon() {
+      switch (this.category) {
+        case 'Vivienda':
+          return ['fas', 'home']
+        case 'Hacienda':
+          return ['fas', 'university']
+        default:
+          'Vivienda'
+      }
     },
   },
 }

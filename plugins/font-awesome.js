@@ -11,10 +11,10 @@ import {
   faClock,
   faCalendar,
   faChevronRight,
+  faUniversity
 } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
-config.showMissingIcons = true
 
 library.add(
   faBars,
@@ -25,7 +25,10 @@ library.add(
   faClock,
   faCalendar,
   faChevronRight,
-  faLinkedin
-)
+  faLinkedin,
+  faUniversity
+  )
+  
+config.showMissingIcons = true
 
 Vue.component('fa-icon', FontAwesomeIcon)

@@ -1,6 +1,8 @@
 ---
 title: Como exentar el pago de ISR
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+description: 'Al momento de hacer una operación, nos corresponde la obligación del pago de ISR, pero  hay formas de exentar este impuesto.'
+category: Hacienda
+date: 23/02/21
 ---
 
 El año pasado tuve oportunidad de atender un cliente que se dedica al ramo de trasporte de materiales con flotilla propia, es decir, alguien que siempre está en línea vigilante de la operación y la logística de las unidades de su empresa, por lo tanto, disponía de escasos minutos para recibir información precisa que le permitiera tomar decisiones de manera inmediata ya que solo disponía de pocos días para atender lo relacionado al crédito hipotecario para finiquitar su departamento. 

@@ -34,6 +34,7 @@
         <card-blog-resume
           :title="lastEntry.title"
           :resume="lastEntry.description"
+          :category="lastEntry.category"
           :date="lastEntry.date"
           :largeCard="true"
         >
@@ -89,6 +90,7 @@
           :key="i"
           :title="item.title"
           :resume="item.description"
+          :category="item.category"
           :path="`/blog/${item.slug}`"
         />
       </div>
@@ -108,7 +110,6 @@ export default {
       titleChunk: 'Blog',
     }
   },
-  
   computed: {
     lastEntry() {
       return this.article[0]

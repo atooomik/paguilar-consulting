@@ -1,6 +1,7 @@
 ---
 title: Como calificar sin historial crediticio
 description: 'Si tu barrera para conseguir la casa de tus sueños, es la falta de historial crediticio, yo te cuento como solucionarlo.'
+category: Vivienda
 date: 30/01/21
 
 ---
