@@ -9,7 +9,7 @@
     >
       <img
         class="absolute w-full h-full object-cover"
-        src="../static/images/hipoteca.jpg"
+        :src="`images/${coverImage}`"
         alt="Portada de la card de blog"
       />
       <figure
@@ -60,6 +60,10 @@ export default {
     title: {
       type: String,
       default: '',
+    },
+    coverImage: {
+      type: String,
+      default: 'hipoteca.jpg',
     },
     resume: {
       type: String,

@@ -2,8 +2,8 @@
 title: Como calificar sin historial crediticio
 description: 'Si tu barrera para conseguir la casa de tus sueños, es la falta de historial crediticio, yo te cuento como solucionarlo.'
 category: Vivienda
+cover: como-calificar-sin-historial-crediticio/cover.jpg
 date: 30/01/21
-
 ---
 
 Recuerdo que en 2005 colaborando en Hipotecaria Crédito y Casa ( Hoy ABC Capital ) institución que otorgaba crédito para clientes que no tenían un historial crediticio en bancos, llegó un cliente con la ilusión de comprar una casa para él y sus 3 hijos.
