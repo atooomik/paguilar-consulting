@@ -9,7 +9,7 @@
           Nostrodum exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequeant.
         </p>
-        <a href="#servicios" class="flex">
+        <a href="#servicios" v-smooth-scroll class="flex">
           <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
             Servicios
           </button>
