@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto">    
+  <section class="max-w-7xl mx-auto">
     <div class="section-container flex flex-col py-8 lg:flex-row">
       <div class="lg:w-1/2">
         <nuxt-link
@@ -8,31 +8,24 @@
         >
           <div class="flex items-center py-2 mx-auto lg:py-4">
             <figure class="flex items-center justify-center w-8 h-8 rounded-lg">
-              <fa-icon class="text-ux-orange" :icon="['fas', 'home']" />
+              <fa-icon class="text-ux-orange" :icon="iconCategory" />
             </figure>
-            <p class="mx-2 text-ux-orange font-semibold">Vivienda</p>
+            <p class="mx-2 text-ux-orange font-semibold">
+              {{ article.category }}
+            </p>
           </div>
         </nuxt-link>
-        <img
-          class="rounded-lg"
-          src="~/assets/images/smiling.jpg"
-          alt="Portada de la entrada del blog"
-        />
+        <div class="w-full h-68 rounded-lg overflow-hidden">
+          <img
+            class="w-full h-full object-cover object-center"
+            :src="`/images/${article.cover}`"
+            alt="Portada de la entrada del blog"
+          />
+        </div>
       </div>
       <div class="lg:flex lg:flex-col lg:justify-start lg:pl-8">
-        <nuxt-link
-          class="hidden w-full flex border-t border-b border-ux-orange lg:flex lg:mb-8"
-          to="/"
-        >
-          <div class="flex items-center py-2 mx-auto lg:py-4">
-            <figure class="flex items-center justify-center w-8 h-8 rounded-lg">
-              <fa-icon class="text-ux-orange" :icon="['fas', 'home']" />
-            </figure>
-            <p class="mx-2 text-ux-orange font-semibold">Vivienda</p>
-          </div>
-        </nuxt-link>
         <h1 class="my-4 text-h2 font-semibold lg:mt-0 lg:mb-8 lg:text-h1">
-          {{article.title}}
+          {{ article.title }}
         </h1>
         <div class="flex items-center mb-8 md:mb-0">
           <div class="flex items-center mx-4 lg:mb-0">
@@ -88,7 +81,7 @@
           </div>
         </div>
       </figure>
-    </div>    
+    </div>
   </section>
 </template>
 
@@ -96,7 +89,24 @@
 export default {
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
-    return { article}
+    return { article }
+  },
+  data() {
+    return {
+      article: [],
+    }
+  },
+  computed: {
+    iconCategory() {
+      switch (this.article.category) {
+        case 'Vivienda':
+          return ['fas', 'home']
+        case 'Hacienda':
+          return ['fas', 'university']
+        default:
+          'Vivienda'
+      }
+    },
   },
 }
 </script>

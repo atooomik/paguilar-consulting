@@ -12,7 +12,7 @@
         </p>
         <p class="mb-4 text-h4">
           Aquí puedes encontrar
-          <a href="/" class="font-semibold text-ux-blue">mi última entrada:</a>
+          <span class="font-semibold text-ux-blue">mi última entrada:</span>
         </p>
         <!----
         <p class="mb-4">
@@ -35,6 +35,7 @@
           :title="lastEntry.title"
           :resume="lastEntry.description"
           :category="lastEntry.category"
+          :coverImage="lastEntry.cover"
           :date="lastEntry.date"
           :largeCard="true"
         >
@@ -68,7 +69,7 @@
               </div>
             </div>
             <div class="flex">
-              <nuxt-link to="/blog/main-test" class="mr-0 ml-auto">
+              <nuxt-link :to="`/blog/${lastEntry.slug}`" class="mr-0 ml-auto">
                 <button class="btn btn--blue flex items-center">
                   Leer entrada completa
                   <fa-icon
@@ -91,6 +92,7 @@
           :title="item.title"
           :resume="item.description"
           :category="item.category"
+          :coverImage="item.cover"
           :path="`/blog/${item.slug}`"
         />
       </div>
@@ -99,11 +101,10 @@
 </template>
 
 <script>
-
 export default {
   async asyncData({ $content }) {
     const article = await $content('articles').fetch()
-    return { article}
+    return { article }
   },
   head() {
     return {

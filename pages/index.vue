@@ -55,9 +55,7 @@
       <div id="servicios" class="section-container">
         <h2 class="pb-4 text-center text-h3 lg:text-h2">Servicios</h2>
         <p class="pb-8 text-center">¿Qué puedo hacer por ti?</p>
-        <div
-          class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-        >
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <card-services
             v-for="(service, i) in servicios"
             :key="i"
@@ -138,10 +136,13 @@
       <h2 class="pb-8 text-h3 text-center lg:text-h2">Ultimas entradas</h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <card-blog-resume
-          v-for="(entrada, i) in entradas"
+          v-for="(item, i) in article"
           :key="i"
-          :title="entrada.name"
-          :resume="entrada.desc"
+          :title="item.title"
+          :resume="item.description"
+          :category="item.category"
+          :coverImage="item.cover"
+          :path="`/blog/${item.slug}`"
         />
       </div>
     </div>
@@ -159,20 +160,16 @@
 
 <script>
 import { servicios } from '~/assets/data/services.json'
-import { entradas } from '~/assets/data/entries.json'
 import VueCarousel from 'vue-carousel/src/Carousel.vue'
 import VueSlide from 'vue-carousel/src/Slide.vue'
 
 export default {
-  asyncData() {
-    return {
-      servicios,
-      entradas,
-    }
+  async asyncData({ $content }) {
+    const article = await $content('articles').fetch()
+    return { article, servicios }
   },
   data: () => ({
     servicios: [],
-    entradas: [],
   }),
   components: {
     VueCarousel,

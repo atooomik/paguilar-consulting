@@ -2,6 +2,7 @@
 title: Como exentar el pago de ISR
 description: 'Al momento de hacer una operación, nos corresponde la obligación del pago de ISR, pero  hay formas de exentar este impuesto.'
 category: Hacienda
+cover: exentando-el-isr-de-un-credito-hipotecario/cover.jpg
 date: 23/02/21
 ---
 
