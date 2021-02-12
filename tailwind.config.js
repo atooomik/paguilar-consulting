@@ -1,18 +1,4 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js',
-    ],
-  },
   theme: {
     extend: {
       colors: {
@@ -22,18 +8,18 @@ module.exports = {
           bgContrast: '#F9F8FD',
           textContrast: '#6e6d7a',
           textTitles: '#283848',
-          textBody: '#33475B',
+          textBody: '#33475B'
         },
         ux: {
           blue: '#337AB7',
-          orange: '#FC7B27',
-        },
+          orange: '#FC7B27'
+        }
       },
       fontSize: {
         h1: '3.052rem',
         h2: '1.953rem',
         h3: '1.563rem',
-        h4: '1.125rem',
+        h4: '1.125rem'
       },
       spacing: {
         px: '1px',
@@ -56,7 +42,7 @@ module.exports = {
         48: '12rem',
         56: '14rem',
         64: '16rem',
-        68: '20rem',
+        68: '20rem'
       },
       maxWidth: {
         none: 'none',
@@ -71,10 +57,20 @@ module.exports = {
         '5xl': '64rem',
         '6xl': '72rem',
         '7xl': '81rem',
-        full: '100%',
-      },
-    },
+        full: '100%'
+      }
+    }
   },
   variants: {},
   plugins: [require('@tailwindcss/forms')],
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ]
+  }
 }

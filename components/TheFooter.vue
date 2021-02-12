@@ -20,7 +20,7 @@
           <a href="mailto:patricia.aguilarm@outlook.es">
             <fa-icon
               class="text-2xl mx-4 text-ui-textContrast hover:text-ui-textTitles"
-              :icon="['far', 'envelope']"
+              :icon="['fas', 'envelope']"
             />
           </a>
           <a

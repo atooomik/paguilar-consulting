@@ -11,9 +11,10 @@ import {
   faClock,
   faCalendar,
   faChevronRight,
-  faUniversity
+  faUniversity,
+  faEnvelope,
+  faMobileAlt
 } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 library.add(
   faBars,
@@ -25,7 +26,8 @@ library.add(
   faCalendar,
   faChevronRight,
   faLinkedin,
-  faUniversity
+  faUniversity,
+  faMobileAlt
 )
 
 config.showMissingIcons = true
