@@ -9,7 +9,7 @@
     >
       <img
         class="absolute w-full h-full object-cover"
-        :src="`images/${coverImage}`"
+        :src="`/images/${coverImage}`"
         alt="Portada de la card de blog"
       />
       <figure

@@ -141,7 +141,7 @@
           :title="item.title"
           :resume="item.description"
           :category="item.category"
-          :coverImage="`/images/${item.cover}`"
+          :coverImage="item.cover"
           :path="`/blog/${item.slug}`"
         />
       </div>
