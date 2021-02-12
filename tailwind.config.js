@@ -131,6 +131,7 @@ module.exports = {
       'pages/**/*.vue',
       'plugins/**/*.js',
       'nuxt.config.js'
-    ]
+    ],
+    whitelist: ['bg-amber-50', 'bg-blue-50', 'text-blue-600', 'text-amber-500']
   }
 }
