@@ -16,6 +16,7 @@
             src="~/assets/images/logo-dummy.svg"
             class="w-10 h-10"
             alt="Logo de la marca"
+            @click="redirect"
           >
         </nuxt-link>
         <nav class="hidden lg:block">

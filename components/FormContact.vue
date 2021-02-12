@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 mx-auto border border-ui-outline rounded-lg shadow lg:max-w-md">
+  <div class="p-4 mx-auto border border-ui-outline rounded-lg lg:max-w-md bg-white">
     <form action="">
       <div class="mb-4">
         <label for="email" class="block text-sm font-medium text-gray-700">Correo</label>
@@ -35,7 +35,7 @@
           <option>Escrituración</option>
         </select>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center mb-4">
         <input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
         <label for="remember_me" class="ml-2 block text-sm text-gray-900">
           He leído y acepto el <nuxt-link class="text-ux-blue" to="/acuerdo-de-confidencialidad">Acuerdo de confidencialidad</nuxt-link>
