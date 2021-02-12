@@ -108,5 +108,6 @@ export default {
       }
     },
   },
+  transition: 'slide-transition',
 }
 </script>
