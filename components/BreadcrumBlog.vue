@@ -44,7 +44,7 @@
           >
             <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
           </svg>
-          <nuxt-link to="#" aria-current="page" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+          <nuxt-link to="/" aria-current="page" :class="`ml-4 text-sm font-medium text-${colorTheme}`">
             <fa-icon class="mr-2" :icon="categoryIcon" />
             {{ category }}
           </nuxt-link>
@@ -70,6 +70,16 @@ export default {
           return ['fas', 'home']
         case 'Hacienda':
           return ['fas', 'university']
+        default:
+          return 'Vivienda'
+      }
+    },
+    colorTheme () {
+      switch (this.category) {
+        case 'Vivienda':
+          return 'amber-500'
+        case 'Hacienda':
+          return 'blue-600'
         default:
           return 'Vivienda'
       }

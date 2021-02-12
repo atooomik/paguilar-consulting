@@ -15,7 +15,7 @@
         <h1 class="my-4 text-h2 font-semibold lg:mt-0 lg:mb-8 lg:text-h1">
           {{ article.title }}
         </h1>
-        <div class="flex items-center mb-8 md:mb-0">
+        <div class="flex items-center">
           <div class="flex items-center mx-4 lg:mb-0">
             <figure
               class="flex items-center justify-center w-8 h-8 mr-2 bg-gray-200 rounded-lg"

@@ -25,7 +25,7 @@
             <li>
               <a
                 v-smooth-scroll
-                href="#servicios"
+                href="/#servicios"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Servicios
@@ -34,7 +34,7 @@
             <li>
               <a
                 v-smooth-scroll
-                href="#trayectoria"
+                href="/#trayectoria"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Trayectoria
@@ -43,7 +43,7 @@
             <li>
               <a
                 v-smooth-scroll
-                href="#contacto"
+                href="/#contacto"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Contacto
@@ -66,17 +66,17 @@
           <nav>
             <ul>
               <li class="flex h-10 px-2 mb-2 transition ease-in-out duration-150 rounded hover:bg-blue-50" @click="redirect">
-                <a v-smooth-scroll href="#servicios">
+                <a v-smooth-scroll href="/#servicios">
                   <p class="my-2 text-h4 hover:text-ux-blue">Servicios</p>
                 </a>
               </li>
               <li class="flex h-10 px-2 mb-2 transition ease-in-out duration-150 rounded hover:bg-blue-50" @click="redirect">
-                <a v-smooth-scroll href="#trayectoria">
+                <a v-smooth-scroll href="/#trayectoria">
                   <p class="my-2 text-h4 hover:text-ux-blue">Trayectoria</p>
                 </a>
               </li>
               <li class="flex h-10 px-2 mb-2 transition ease-in-out duration-150 rounded hover:bg-blue-50" @click="redirect">
-                <a v-smooth-scroll href="#contacto">
+                <a v-smooth-scroll href="/#contacto">
                   <p class="my-2 text-h4 hover:text-ux-blue">Contacto</p>
                 </a>
               </li>

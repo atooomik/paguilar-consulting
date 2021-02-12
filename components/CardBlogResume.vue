@@ -14,10 +14,10 @@
       >
       <figure
         v-if="largeCard"
-        class="absolute top-0 right-0 flex items-center px-3 py-2 mr-4 bg-amber-50 rounded-b-lg shadow-lg"
+        :class="`absolute top-0 right-0 flex items-center px-3 py-2 mr-4 text-${colorText} bg-${colorBg} rounded-b-lg shadow-lg`"
       >
-        <fa-icon class="mr-2 text-amber-500" :icon="categoryIcon" />
-        <p class="text-amber-500 font-semibold">
+        <fa-icon class="mr-2" :icon="categoryIcon" />
+        <p class="font-semibold">
           {{ category }}
         </p>
       </figure>
@@ -91,6 +91,26 @@ export default {
           return ['fas', 'home']
         case 'Hacienda':
           return ['fas', 'university']
+        default:
+          return 'Vivienda'
+      }
+    },
+    colorText () {
+      switch (this.category) {
+        case 'Vivienda':
+          return 'amber-500'
+        case 'Hacienda':
+          return 'blue-600'
+        default:
+          return 'Vivienda'
+      }
+    },
+    colorBg () {
+      switch (this.category) {
+        case 'Vivienda':
+          return 'amber-50'
+        case 'Hacienda':
+          return 'blue-50'
         default:
           return 'Vivienda'
       }
