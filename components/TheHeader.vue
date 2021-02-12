@@ -11,13 +11,13 @@
           <fa-icon class="text-h4" :icon="['fas', 'bars']" />
         </button>
 
-        <a class="flex items-center" href="/">
+        <nuxt-link class="flex items-center" to="/">
           <img
             src="~/assets/images/logo-dummy.svg"
             class="w-10 h-10"
             alt="Logo de la marca"
           />
-        </a>
+        </nuxt-link>
         <nav class="hidden lg:block">
           <ul class="flex">
             <li>
@@ -48,12 +48,12 @@
               </a>
             </li>
             <li>
-              <a
-                href="/blog"
+              <nuxt-link
+                to="/blog"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Blog
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
