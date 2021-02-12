@@ -13,7 +13,9 @@ import {
   faChevronRight,
   faUniversity,
   faEnvelope,
-  faMobileAlt
+  faMobileAlt,
+  faNewspaper
+
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -27,7 +29,8 @@ library.add(
   faChevronRight,
   faLinkedin,
   faUniversity,
-  faMobileAlt
+  faMobileAlt,
+  faNewspaper
 )
 
 config.showMissingIcons = true

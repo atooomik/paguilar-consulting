@@ -1,20 +1,8 @@
 <template>
   <section class="max-w-7xl mx-auto">
+    <breadcrum-blog :category="article.category" />
     <div class="section-container flex flex-col py-8 lg:flex-row">
       <div class="lg:w-1/2">
-        <nuxt-link
-          class="w-full flex mb-8 border-t border-b border-ux-orange lg:hidden"
-          to="/"
-        >
-          <div class="flex items-center py-2 mx-auto lg:py-4">
-            <figure class="flex items-center justify-center w-8 h-8 rounded-lg">
-              <fa-icon class="text-ux-orange" :icon="iconCategory" />
-            </figure>
-            <p class="mx-2 text-ux-orange font-semibold">
-              {{ article.category }}
-            </p>
-          </div>
-        </nuxt-link>
         <div class="w-full h-68 rounded-lg overflow-hidden">
           <img
             class="w-full h-full object-cover object-center"
@@ -92,6 +80,7 @@
 </template>
 
 <script>
+
 export default {
   transition: 'slide-transition',
   async asyncData ({ $content, params }) {
@@ -104,16 +93,7 @@ export default {
     }
   },
   computed: {
-    iconCategory () {
-      switch (this.article.category) {
-        case 'Vivienda':
-          return ['fas', 'home']
-        case 'Hacienda':
-          return ['fas', 'university']
-        default:
-          return 'Vivienda'
-      }
-    }
+
   }
 }
 </script>

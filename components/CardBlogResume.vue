@@ -14,10 +14,10 @@
       >
       <figure
         v-if="largeCard"
-        class="absolute top-0 right-0 flex items-center p-2 mr-4 bg-ui-white rounded-b-lg shadow-lg"
+        class="absolute top-0 right-0 flex items-center px-3 py-2 mr-4 bg-amber-50 rounded-b-lg shadow-lg"
       >
-        <fa-icon class="mr-2 text-ux-orange" :icon="categoryIcon" />
-        <p class="text-ux-orange font-semibold">
+        <fa-icon class="mr-2 text-amber-500" :icon="categoryIcon" />
+        <p class="text-amber-500 font-semibold">
           {{ category }}
         </p>
       </figure>
