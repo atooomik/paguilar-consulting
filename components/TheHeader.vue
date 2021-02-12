@@ -1,11 +1,12 @@
 <template>
-  <section class="fixed w-full px-4 bg-ui-white z-10">
+  <section class="fixed w-full px-4 z-10 bg-white">
     <div class="max-w-7xl mx-auto">
       <div
-        class="w-full h-20 flex items-center justify-between border-b border-ui-outline lg:order-2"
+        class="w-full h-20 flex items-center justify-between border-b border-ui-outline lg:order-2 "
       >
         <button
-          class="p-2 text-ui-textContrast rounded-lg hover:text-ui-textTitles lg:hidden"
+          v-if="isMobile"
+          class="p-2 text-ui-textContrast rounded-lg hover:text-ui-textTitles"
           @click="openMenu()"
         >
           <fa-icon class="text-h4" :icon="['fas', 'bars']" />
@@ -19,7 +20,7 @@
             @click="redirect"
           >
         </nuxt-link>
-        <nav class="hidden lg:block">
+        <nav class="hidden md:block">
           <ul class="flex">
             <li>
               <a
@@ -61,28 +62,28 @@
       </div>
       <!--Menu mobil-->
       <transition name="slide-fade">
-        <div v-if="showMenu" class="py-2 bg-ui-white">
+        <div v-if="isMobile && showMenu" class=" absolute max-w-xs w-full py-3 px-3 bg-ui-white shadow">
           <nav>
             <ul>
-              <li @click="redirect">
+              <li class="flex h-10 px-2 mb-2 transition ease-in-out duration-150 rounded hover:bg-blue-50" @click="redirect">
                 <a v-smooth-scroll href="#servicios">
                   <p class="my-2 text-h4 hover:text-ux-blue">Servicios</p>
                 </a>
               </li>
-              <li @click="redirect">
+              <li class="flex h-10 px-2 mb-2 transition ease-in-out duration-150 rounded hover:bg-blue-50" @click="redirect">
                 <a v-smooth-scroll href="#trayectoria">
                   <p class="my-2 text-h4 hover:text-ux-blue">Trayectoria</p>
                 </a>
               </li>
-              <li @click="redirect">
+              <li class="flex h-10 px-2 mb-2 transition ease-in-out duration-150 rounded hover:bg-blue-50" @click="redirect">
                 <a v-smooth-scroll href="#contacto">
                   <p class="my-2 text-h4 hover:text-ux-blue">Contacto</p>
                 </a>
               </li>
-              <li class="border-t border-ui-outline" @click="redirect">
-                <a href="/blog" class="my-2 text-h4 hover:text-ux-blue">
+              <li class="flex h-10 px-2 border-t border-ui-outline bg-gray-100 rounded" @click="redirect">
+                <nuxt-link to="/blog" class="my-2 text-h4 font-semibold hover:text-ux-blue">
                   Blog
-                </a>
+                </nuxt-link>
               </li>
             </ul>
           </nav>
@@ -98,11 +99,17 @@ export default {
   data: () => {
     return {
       showMenu: false,
-      sizeScreen: 'idle'
+      isMobile: false
     }
   },
-
+  mounted () {
+    this.calculateScreen()
+    window.addEventListener('resize', this.calculateScreen)
+  },
   methods: {
+    calculateScreen () {
+      this.isMobile = window.innerWidth < 768
+    },
     openMenu () {
       this.showMenu = !this.showMenu
     },
