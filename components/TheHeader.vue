@@ -52,7 +52,7 @@
             <li>
               <nuxt-link
                 to="/blog"
-                class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
+                class="mx-4 text-h4 text-ui-textContrast"
               >
                 Blog
               </nuxt-link>

@@ -20,10 +20,10 @@
   color: theme('colors.ux.blue');
   font-weight: theme('fontWeight.semibold');
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     padding: theme('padding.2');
-    color: theme('colors.ui.textBody');
-    background: theme('backgroundColor.gray.200');
+    color: theme('colors.blue.500');
+    background: theme('backgroundColor.blue.50');
     border-radius: theme('borderRadius.lg');
   }
 }
