@@ -8,14 +8,16 @@
           class="w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12 mx-auto"
           src="~/assets/images/cita.svg"
           alt="Icono del autor del comentario"
-        />
+        >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit
           explicabo quas pariatur sit ipsum, suscipit non, aspernatur cum magnam
           sunt. Libero fugiat ullam odit asperiores laudantium fuga voluptates
           harum!
         </p>
-        <p class="my-4 font-semibold">Prirus Dominus</p>
+        <p class="my-4 font-semibold">
+          Prirus Dominus
+        </p>
       </div>
     </div>
   </div>
@@ -23,6 +25,6 @@
 
 <script>
 export default {
-  name: 'CardTestimonials',
+  name: 'CardTestimonials'
 }
 </script>

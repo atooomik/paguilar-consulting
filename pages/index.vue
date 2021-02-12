@@ -30,13 +30,17 @@
                   class="mx-auto h-40 w-40 rounded-full object-cover object-top xl:w-64 xl:h-64"
                   src="~/assets/images/selfie.jpg"
                   alt="Foto de perfil"
-                />
+                >
                 <div class="space-y-2">
                   <div
                     class="font-medium text-lg leading-6 space-y-1 text-center"
                   >
-                    <h3 class="">Patricia Aguilar</h3>
-                    <p class="font-semibold">Asesora inmobiliaria</p>
+                    <h3 class="">
+                      Patricia Aguilar
+                    </h3>
+                    <p class="font-semibold">
+                      Asesora inmobiliaria
+                    </p>
                     <a href="#" class="text-gray-400 hover:text-gray-300">
                       <span class="sr-only">LinkedIn</span>
                       <fa-icon
@@ -53,8 +57,12 @@
       </div>
       <!--Section services-->
       <div id="servicios" class="section-container">
-        <h2 class="pb-4 text-center text-h3 lg:text-h2">Servicios</h2>
-        <p class="pb-8 text-center">¿Qué puedo hacer por ti?</p>
+        <h2 class="pb-4 text-center text-h3 lg:text-h2">
+          Servicios
+        </h2>
+        <p class="pb-8 text-center">
+          ¿Qué puedo hacer por ti?
+        </p>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <card-services
             v-for="(service, i) in servicios"
@@ -80,7 +88,7 @@
               facilis ullam sit impedit similique illum pariatur atque unde
               nostrum, cumque ipsum voluptas.
             </p>
-            <a href="#contacto" v-smooth-scroll class="flex">
+            <a v-smooth-scroll href="#contacto" class="flex">
               <button class="btn btn--blue my-4 mx-auto lg:mr-auto lg:ml-0">
                 Contáctame
               </button>
@@ -90,19 +98,19 @@
             class="grid grid-cols-2 grid-rows-2 gap-8 order-2 lg:w-1/2 lg:px-12 lg:order-1"
           >
             <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
-              <span class="text-h2 text-ui-textBody">16</span> <br />
+              <span class="text-h2 text-ui-textBody">16</span> <br>
               <p>Años de experiencia en el mercado.</p>
             </div>
             <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
-              <span class="text-h2 text-ui-textBody">+300</span> <br />
+              <span class="text-h2 text-ui-textBody">+300</span> <br>
               <p>Escrituras celebradas.</p>
             </div>
             <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
-              <span class="text-h2 text-ui-textBody">Tercio</span> <br />
+              <span class="text-h2 text-ui-textBody">Tercio</span> <br>
               <p>Escrituras celebradas.</p>
             </div>
             <div class="p-4 my-4 border border-ui-outline rounded-lg lg:my-8">
-              <span class="text-h2 text-ui-textBody">Cuarto</span> <br />
+              <span class="text-h2 text-ui-textBody">Cuarto</span> <br>
               <p>Escrituras celebradas.</p>
             </div>
           </div>
@@ -110,10 +118,10 @@
         <div class="mt-8">
           <vue-carousel
             :per-page-custom="[[0, 1]]"
-            :navigationEnabled="true"
+            :navigation-enabled="true"
             :loop="true"
             :autoplay="true"
-            :autoplayTimeout="3000"
+            :autoplay-timeout="3000"
           >
             <vue-slide>
               <card-testimonials />
@@ -133,7 +141,9 @@
     </div>
     <!--Last entries-->
     <div class="section-container max-w-7xl mx-auto">
-      <h2 class="pb-8 text-h3 text-center lg:text-h2">Ultimas entradas</h2>
+      <h2 class="pb-8 text-h3 text-center lg:text-h2">
+        Ultimas entradas
+      </h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <card-blog-resume
           v-for="(item, i) in article"
@@ -141,7 +151,7 @@
           :title="item.title"
           :resume="item.description"
           :category="item.category"
-          :coverImage="item.cover"
+          :cover-image="item.cover"
           :path="`/blog/${item.slug}`"
         />
       </div>
@@ -159,22 +169,22 @@
 </template>
 
 <script>
-import { servicios } from '~/assets/data/services.json'
 import VueCarousel from 'vue-carousel/src/Carousel.vue'
 import VueSlide from 'vue-carousel/src/Slide.vue'
+import { servicios } from '~/assets/data/services.json'
 
 export default {
-  async asyncData({ $content }) {
+  components: {
+    VueCarousel,
+    VueSlide
+  },
+  transition: 'slide-transition',
+  async asyncData ({ $content }) {
     const article = await $content('articles').fetch()
     return { article, servicios }
   },
   data: () => ({
-    servicios: [],
-  }),
-  components: {
-    VueCarousel,
-    VueSlide,
-  },
-  transition: 'slide-transition',
+    servicios: []
+  })
 }
 </script>

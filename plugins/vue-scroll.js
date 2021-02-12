@@ -3,5 +3,5 @@ import VueSmoothScroll from 'vue2-smooth-scroll'
 
 Vue.use(VueSmoothScroll, {
   duration: 400,
-  offset: -80,
+  offset: -80
 })

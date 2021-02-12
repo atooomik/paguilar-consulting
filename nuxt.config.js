@@ -32,8 +32,8 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     ['@nuxtjs/google-fonts', { 
@@ -45,16 +45,10 @@ export default {
   ],
   watch: ['~/tailwind.config.js'],
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+  modules: [    
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
-
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
-
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
 

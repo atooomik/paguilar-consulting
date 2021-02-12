@@ -15,7 +15,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
-
 library.add(
   faBars,
   faEnvelope,
@@ -27,8 +26,8 @@ library.add(
   faChevronRight,
   faLinkedin,
   faUniversity
-  )
-  
+)
+
 config.showMissingIcons = true
 
-Vue.component('fa-icon', FontAwesomeIcon)
+Vue.component('FaIcon', FontAwesomeIcon)

@@ -11,13 +11,15 @@
         class="absolute w-full h-full object-cover"
         :src="`/images/${coverImage}`"
         alt="Portada de la card de blog"
-      />
+      >
       <figure
         v-if="largeCard"
         class="absolute top-0 right-0 flex items-center p-2 mr-4 bg-ui-white rounded-b-lg shadow-lg"
       >
         <fa-icon class="mr-2 text-ux-orange" :icon="categoryIcon" />
-        <p class="text-ux-orange font-semibold">{{ category }}</p>
+        <p class="text-ux-orange font-semibold">
+          {{ category }}
+        </p>
       </figure>
     </div>
     <div>
@@ -30,7 +32,7 @@
     </div>
     <div>
       <div v-if="largeCard">
-        <slot></slot>
+        <slot />
       </div>
       <div v-else class="flex items-center mt-4">
         <div class="flex items-center">
@@ -39,10 +41,14 @@
           >
             <fa-icon class="text-ui-textContrast" :icon="['fas', 'eye']" />
           </figure>
-          <p class="text-ui-textContrast font-semibold">25 lecturas</p>
+          <p class="text-ui-textContrast font-semibold">
+            25 lecturas
+          </p>
         </div>
         <nuxt-link :to="`${path}`" class="mr-0 ml-auto">
-          <button class="btn btn--blue">Léer más</button>
+          <button class="btn btn--blue">
+            Léer más
+          </button>
         </nuxt-link>
       </div>
     </div>
@@ -55,40 +61,40 @@ export default {
   props: {
     category: {
       type: String,
-      default: '',
+      default: ''
     },
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     coverImage: {
       type: String,
-      default: 'hipoteca.jpg',
+      default: 'hipoteca.jpg'
     },
     resume: {
       type: String,
-      default: '',
+      default: ''
     },
     largeCard: {
       type: Boolean,
-      default: false,
+      default: false
     },
     path: {
       type: String,
-      default: '/blog',
-    },
+      default: '/blog'
+    }
   },
   computed: {
-    categoryIcon() {
+    categoryIcon () {
       switch (this.category) {
         case 'Vivienda':
           return ['fas', 'home']
         case 'Hacienda':
           return ['fas', 'university']
         default:
-          'Vivienda'
+          return 'Vivienda'
       }
-    },
-  },
+    }
+  }
 }
 </script>

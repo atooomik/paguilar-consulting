@@ -17,12 +17,13 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "@nuxt/content": "^1.9.0",
-    "@nuxtjs/axios": "^5.12.5",
+    "@tailwindcss/forms": "^0.2.1",
     "core-js": "^3.6.5",
     "defu": "^3.2.2",
     "node-fetch": "^2.6.1",
     "nuxt": "^2.14.6",
     "property-information": "^5.6.0",
+    "remark-footnotes": "^2.0.0",
     "vue": "^2.6.12",
     "vue-carousel": "^0.18.0",
     "vue-client-only": "^2.0.0",
@@ -31,19 +32,17 @@
     "vue2-smooth-scroll": "^1.5.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/google-fonts": "^1.2.0",
-    "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "@tailwindcss/custom-forms": "^0.2.1",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-nuxt": "^2.0.0",
     "fibers": "^5.0.0",
-    "prettier": "^2.1.2",
     "sass": "^1.29.0",
-    "sass-loader": "^10.1.0",
-    "stylelint": "^13.7.2",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-standard": "^20.0.0"
+    "sass-loader": "^10.1.0"
   }
 }

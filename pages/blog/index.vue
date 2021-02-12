@@ -35,9 +35,9 @@
           :title="lastEntry.title"
           :resume="lastEntry.description"
           :category="lastEntry.category"
-          :coverImage="lastEntry.cover"
+          :cover-image="lastEntry.cover"
           :date="lastEntry.date"
-          :largeCard="true"
+          :large-card="true"
         >
           <div>
             <div class="flex flex-wrap my-4">
@@ -84,7 +84,9 @@
       </div>
     </div>
     <div class="section-container max-w-7xl mx-auto">
-      <h2 class="pb-8 text-h3 text-center lg:text-h2">Todas las entradas</h2>
+      <h2 class="pb-8 text-h3 text-center lg:text-h2">
+        Todas las entradas
+      </h2>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <card-blog-resume
           v-for="(item, i) in article"
@@ -92,7 +94,7 @@
           :title="item.title"
           :resume="item.description"
           :category="item.category"
-          :coverImage="item.cover"
+          :cover-image="item.cover"
           :path="`/blog/${item.slug}`"
         />
       </div>
@@ -102,20 +104,20 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  transition: 'slide-transition',
+  async asyncData ({ $content }) {
     const article = await $content('articles').fetch()
     return { article }
   },
-  head() {
+  head () {
     return {
-      titleChunk: 'Blog',
+      titleChunk: 'Blog'
     }
   },
   computed: {
-    lastEntry() {
+    lastEntry () {
       return this.article[0]
-    },
-  },
-  transition: 'slide-transition',
+    }
+  }
 }
 </script>

@@ -16,14 +16,14 @@
             src="~/assets/images/logo-dummy.svg"
             class="w-10 h-10"
             alt="Logo de la marca"
-          />
+          >
         </nuxt-link>
         <nav class="hidden lg:block">
           <ul class="flex">
             <li>
               <a
-                href="#servicios"
                 v-smooth-scroll
+                href="#servicios"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Servicios
@@ -31,8 +31,8 @@
             </li>
             <li>
               <a
-                href="#trayectoria"
                 v-smooth-scroll
+                href="#trayectoria"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Trayectoria
@@ -40,8 +40,8 @@
             </li>
             <li>
               <a
-                href="#contacto"
                 v-smooth-scroll
+                href="#contacto"
                 class="mx-4 text-h4 text-ui-textContrast hover:text-ui-textBody"
               >
                 Contacto
@@ -64,21 +64,21 @@
           <nav>
             <ul>
               <li @click="redirect">
-                <a href="#servicios" v-smooth-scroll>
+                <a v-smooth-scroll href="#servicios">
                   <p class="my-2 text-h4 hover:text-ux-blue">Servicios</p>
                 </a>
               </li>
               <li @click="redirect">
-                <a href="#trayectoria" v-smooth-scroll>
+                <a v-smooth-scroll href="#trayectoria">
                   <p class="my-2 text-h4 hover:text-ux-blue">Trayectoria</p>
                 </a>
               </li>
               <li @click="redirect">
-                <a href="#contacto" v-smooth-scroll>
+                <a v-smooth-scroll href="#contacto">
                   <p class="my-2 text-h4 hover:text-ux-blue">Contacto</p>
                 </a>
               </li>
-              <li @click="redirect" class="border-t border-ui-outline">
+              <li class="border-t border-ui-outline" @click="redirect">
                 <a href="/blog" class="my-2 text-h4 hover:text-ux-blue">
                   Blog
                 </a>
@@ -97,19 +97,19 @@ export default {
   data: () => {
     return {
       showMenu: false,
-      sizeScreen: 'idle',
+      sizeScreen: 'idle'
     }
   },
 
   methods: {
-    openMenu() {
+    openMenu () {
       this.showMenu = !this.showMenu
     },
-    redirect() {
+    redirect () {
       setTimeout(() => {
         this.showMenu = false
       }, 25)
-    },
-  },
+    }
+  }
 }
 </script>

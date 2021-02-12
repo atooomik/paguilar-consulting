@@ -20,7 +20,7 @@
             class="w-full h-full object-cover object-center"
             :src="`/images/${article.cover}`"
             alt="Portada de la entrada del blog"
-          />
+          >
         </div>
       </div>
       <div class="lg:flex lg:flex-col lg:justify-start lg:pl-8">
@@ -37,7 +37,9 @@
                 :icon="['fas', 'calendar']"
               />
             </figure>
-            <p class="text-ui-textContrast font-semibold">28/11/20</p>
+            <p class="text-ui-textContrast font-semibold">
+              28/11/20
+            </p>
           </div>
           <div class="flex items-center mx-4 lg:mb-0">
             <figure
@@ -48,7 +50,9 @@
                 :icon="['fas', 'calendar']"
               />
             </figure>
-            <p class="text-ui-textContrast font-semibold">28/11/20</p>
+            <p class="text-ui-textContrast font-semibold">
+              28/11/20
+            </p>
           </div>
         </div>
       </div>
@@ -63,10 +67,12 @@
             class="w-full h-full object-cover"
             src="~/assets/images/selfie.jpg"
             alt=""
-          />
+          >
         </div>
         <div>
-          <p class="text-h4">Patricia Aguilar Maya</p>
+          <p class="text-h4">
+            Patricia Aguilar Maya
+          </p>
           <div class="flex items-center mt-4">
             <a href="/linkedin">
               <button
@@ -87,27 +93,27 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  transition: 'slide-transition',
+  async asyncData ({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
     return { article }
   },
-  data() {
+  data () {
     return {
-      article: [],
+      article: []
     }
   },
   computed: {
-    iconCategory() {
+    iconCategory () {
       switch (this.article.category) {
         case 'Vivienda':
           return ['fas', 'home']
         case 'Hacienda':
           return ['fas', 'university']
         default:
-          'Vivienda'
+          return 'Vivienda'
       }
-    },
-  },
-  transition: 'slide-transition',
+    }
+  }
 }
 </script>

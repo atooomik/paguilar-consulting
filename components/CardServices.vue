@@ -5,8 +5,10 @@
         class="w-12 h-12 mx-auto"
         :src="`/images/${icon}`"
         alt="Logo del servicio"
-      />
-      <p class="my-4 text-center text-base font-semibold">{{ title }}</p>
+      >
+      <p class="my-4 text-center text-base font-semibold">
+        {{ title }}
+      </p>
     </div>
     <p>{{ description }}</p>
   </div>
@@ -18,16 +20,16 @@ export default {
   props: {
     icon: {
       type: String,
-      default: '',
+      default: ''
     },
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     description: {
       type: String,
-      default: '',
-    },
-  },
+      default: ''
+    }
+  }
 }
 </script>

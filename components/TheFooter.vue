@@ -6,9 +6,9 @@
           src="~/assets/images/logo-dummy.svg"
           class="w-24 h-24 mx-auto my-4"
           alt="Logo de la marca"
-        />
+        >
         <p class="font-semibold">
-          Patricia Aguilar <br />
+          Patricia Aguilar <br>
           Consultoria Inmobiliaria
         </p>
         <p>México – © 2020</p>
@@ -43,8 +43,7 @@
               class="font-semibold text-ux-blue"
               target="_blank"
               href="https://atoomikdev.com/"
-              >atoomik</a
-            >
+            >atoomik</a>
           </p>
         </div>
       </div>
@@ -54,6 +53,6 @@
 
 <script>
 export default {
-  name: 'TheFooter',
+  name: 'TheFooter'
 }
 </script>
