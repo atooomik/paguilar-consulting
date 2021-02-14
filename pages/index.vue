@@ -26,11 +26,15 @@
           >
             <li class="py-10 px-6 text-center rounded-lg xl:px-10 xl:text-left">
               <div class="space-y-6 xl:space-y-10">
-                <img
-                  class="mx-auto h-40 w-40 rounded-full object-cover object-top xl:w-64 xl:h-64"
-                  src="~/assets/images/selfie.jpg"
-                  alt="Foto de perfil"
-                >
+                <picture>
+                  <source type="image/webp" srcset="~/assets/images/selfie.webp">
+                  <source type="image/jpg" srcset="~/assets/images/selfie.jpg">
+                  <img
+                    class="mx-auto h-40 w-40 rounded-full object-cover object-top xl:w-64 xl:h-64"
+                    src="~/assets/images/selfie.jpg"
+                    alt="Patricia Aguilar Maya, Foto de perfil"
+                  >
+                </picture>
                 <div class="space-y-2">
                   <div
                     class="font-medium text-lg leading-6 space-y-1 text-center"

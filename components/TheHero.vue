@@ -16,11 +16,11 @@
         </a>
       </div>
       <div class="w-full h-72 px-4 overflow-hidden">
-        <img
-          class="w-full h-full object-cover rounded-lg"
-          src="~/assets/images/smiling.jpg"
-          alt="Mujer asesorando a una pareja"
-        >
+        <picture>
+          <source type="image/webp" srcset="~/assets/images/smiling.webp">
+          <source type="image/jpeg" srcset="~/assets/images/smiling.jpg">
+          <img class="w-full h-full object-cover rounded-lg" src="~/assets/images/smiling.jpg" alt="Mujer dando asesoria a un cliente">
+        </picture>
       </div>
     </div>
   </div>

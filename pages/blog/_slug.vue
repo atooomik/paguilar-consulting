@@ -48,14 +48,18 @@
     <div class="section-container max-w-5xl mx-auto">
       <nuxt-content :document="article" />
       <figure
-        class="flex p-4 mx-auto border border-ui-outline rounded-lg lg:w-1/2"
+        class="flex p-4 mt-4 mx-auto border border-ui-outline rounded-lg lg:w-1/2"
       >
         <div class="w-20 h-20 rounded-full overflow-hidden">
-          <img
-            class="w-full h-full object-cover"
-            src="~/assets/images/selfie.jpg"
-            alt=""
-          >
+          <picture>
+            <source type="image/webp" srcset="~/assets/images/selfie.webp">
+            <source type="image/jpg" srcset="~/assets/images/selfie.jpg">
+            <img
+              class="w-full h-full object-cover object-top"
+              src="~/assets/images/selfie.jpg"
+              alt="Patricia Aguilar Maya, Foto de perfil"
+            >
+          </picture>
         </div>
         <div>
           <p class="text-h4">
