@@ -133,7 +133,7 @@ module.exports = {
       'nuxt.config.js'
     ],
     options: {
-      whitelist: ['bg-amber-50', 'bg-blue-50', 'text-blue-600', 'text-amber-500']
+      safelist: ['bg-amber-50', 'bg-blue-50', 'text-blue-600', 'text-amber-500']
     }
   }
 }
